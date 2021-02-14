@@ -1,0 +1,89 @@
+html, body {
+    font-family: Raleway, Arial;
+    font-size: 12px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#bloc-page {
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.liste-navigation {
+    display: flex;
+    list-style-type: none;
+}
+
+#logo {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.inscription {
+    color: #0065FC;
+    font-weight: bolder;
+}
+
+.liste-navigation > div {
+    height: 40px;
+    margin: 20px;
+}
+
+.liste-navigation > div > img {
+    height: 40px;
+}
+
+header a {
+    text-decoration: none;
+    width: max-content;
+    color: black;
+}
+
+header a:active {
+    padding-top: 20px;
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+
+.localisation {
+    display: flex;
+    width: 300px;
+    height: 35px;
+}
+
+.fav {
+    background-color: lightgrey;
+    height: 23px;
+    width: 30px;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid lightgray;
+    border-right: none;
+    padding-top: 10px;
+}
+/* 
+.fas fa-map-marker-alt {
+    margin: auto;
+} */
+
+input {
+    border: 1px solid lightgray;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+label {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 10px 10px 0;
+    padding: 9px 10px 0 10px;
+}
