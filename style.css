@@ -68,10 +68,6 @@ header a:active {
     border-right: none;
     padding-top: 10px;
 }
-/* 
-.fas fa-map-marker-alt {
-    margin: auto;
-} */
 
 input {
     border: 1px solid lightgray;
@@ -86,4 +82,78 @@ label {
     font-weight: bold;
     border-radius: 0 10px 10px 0;
     padding: 9px 10px 0 10px;
+}
+
+.filtres {
+    display: flex;
+    padding-top: 20px;
+    width: 720px;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.eco {
+    display: flex;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    border-left: none;
+    padding-right: 16px;
+}
+
+/* .description {
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    border-left: none;
+} */
+
+.familial {
+    display: flex;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    border-left: none;
+    padding-right: 16px;
+}
+
+.roman {
+    display: flex;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    border-left: none;
+    padding-right: 16px;
+}
+
+.animaux {
+    display: flex;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    border-left: none;
+    padding-right: 16px;
+}
+
+.fav-eco, .fav-familial, .fav-roman, .fav-animaux {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    width: 18px;
+    border-radius: 50%/50%;
+    padding: 12px 7px 0 14px;
+    margin-right: 10px;
+}
+
+.info {
+    display: flex;
+    padding-top: 20px;
+}
+
+.fav-info {
+    align-self: center;
+    color: #0065FC;
+    width: 11px;
+    border: 1px solid lightgray;
+    border-radius: 50%/50%;
+    padding: 2px 0px 2px 8px;
+    margin-right: 9px;
+}
+
+.fa-info {
+    font-size: x-small;
 }
