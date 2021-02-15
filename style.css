@@ -157,3 +157,44 @@ label {
 .fa-info {
     font-size: x-small;
 }
+
+#hebergements {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    padding-top: 31px;
+}
+
+.hebergements-ville {
+    background-color: lightgray;
+    width: 630px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.populaires {
+    background-color: lightgrey;
+    width: 255px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.populaires-titre {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.populaires-titre > h2 {
+    margin: 0;
+}
+
+.fa-chart-line {
+    margin: auto 0;
+    font-size: 20px;
+}
+
+.hebergements-ville-grid {
+    display: grid;
+    grid-template: repeat(2, 200px) / repeat(9, 1fr);
+}
