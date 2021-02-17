@@ -4,12 +4,6 @@ html, body {
     box-sizing: border-box;
     height: 100%;
 }
-/* 
-#bloc {
-    width: 950px;
-    height: 100%;
-    margin: auto;
-} */
 
 #bloc-page {
     width: 1100px;
@@ -299,8 +293,126 @@ h3 {
     margin-top: 20px;
 }
 
-/* FOOTER */
-/* 
+/* SECTION ACTIVITES */
+
+.activites-ville {
+    width: 1100px;
+    height: 440px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content:stretch;
+}
+
+.activites-carte-1 {
+    width: 235px;
+    height: 440px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.activites-carte-2 {
+    width: 235px;
+    height: 224px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.activites-carte-3 {
+    width: 235px;
+    height: 156px;
+    margin-top: 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.activites-carte-4 {
+    width: 235px;
+    height: 440px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.activites-carte-5 {
+    width: 235px;
+    height: 166px;
+    margin-bottom: 52px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.activites-carte-6 {
+    width: 235px;
+    height: 220px;
+    margin-bottom: 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.activites-image-1 {
+    background-size: 300px 420px;
+    height: 380px;
+    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.activites-image-2 {
+    background-size: 235px 242px;
+    height: 165px;
+    border-radius: 20px 20px 0 0;
+}
+
+.activites-image-3 {
+    background-size: 235px 158px;
+    height: 98px;
+    border-radius: 20px 20px 0 0;
+}
+
+.activites-image-4 {
+    background-size: 380px 380px;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+}
+
+.activites-image-5 {
+    background-size: 250px 150px;
+    height: 114px;
+    border-radius: 20px 20px 0 0;
+}
+
+.activites-image-6 {
+    background-size: 240px 199px;
+    height: 164px;
+    border-radius: 20px 20px 0 0;
+}
+
+.image-activites {
+    display: none;
+}
+
+.act-description {
+    margin: 16px 0 0 14px;
+    font-size: 15px;
+    font-weight: 1000;
+}
+
+/* SECTION FOOTER */
+
 .footer {
-    margin-bottom: 50px;
-} */
+    width: 1100px;
+    height: 145px;
+    margin: auto;
+    background-color: lightgray;
+    padding: 45px;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.element {
+    width: 350px;
+    font-size: 15px;
+}
+
