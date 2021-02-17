@@ -1,16 +1,23 @@
 html, body {
     font-family: Raleway, Arial;
-    font-size: 12px;
+    font-size: 13px;
     box-sizing: border-box;
     height: 100%;
 }
+/* 
+#bloc {
+    width: 950px;
+    height: 100%;
+    margin: auto;
+} */
 
 #bloc-page {
-    width: 1000px;
+    width: 1100px;
     height: 100%;
     margin: auto;
 }
 
+/* HEADER */
 .header {
     padding: 20px 0;
 }
@@ -23,6 +30,11 @@ html, body {
 #logo {
     margin-right: auto;
     margin-left: 0;
+}
+
+#logo > img {
+    width: 110px;
+    height: 50px;
 }
 
 .inscription {
@@ -51,29 +63,29 @@ header a:active {
     color: #0065FC;
 }
 
-
+/* LOCALISATION ET FILTRES */
 .localisation {
     display: flex;
-    width: 300px;
-    height: 35px;
+    width: 360px;
+    height: 47px;
 }
 
 .fav {
     background-color: lightgrey;
-    height: 23px;
-    width: 30px;
+    height: 30px;
+    width: 45px;
     text-align: center;
     border-radius: 10px 0 0 10px;
     border: 1px solid lightgray;
     border-right: none;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 input {
     border: 1px solid lightgray;
     text-align: left;
-    padding-left: 10px;
-    font-weight: bold;
+    padding-left: 13px;
+    font-weight: 900;
 }
 
 label {
@@ -81,13 +93,14 @@ label {
     color: white;
     font-weight: bold;
     border-radius: 0 10px 10px 0;
-    padding: 9px 10px 0 10px;
+    padding: 14px 10px 0 10px;
 }
 
 .filtres {
     display: flex;
-    padding-top: 20px;
-    width: 720px;
+    padding-top: 32px;
+    width: 790px;
+    height: 45px;
     justify-content: space-between;
     font-weight: bold;
 }
@@ -95,21 +108,15 @@ label {
 .eco {
     display: flex;
     border: 2px solid lightgray;
-    border-radius: 20px;
+    border-radius: 40px;
     border-left: none;
     padding-right: 16px;
 }
 
-/* .description {
-    border: 1px solid lightgray;
-    border-radius: 20px;
-    border-left: none;
-} */
-
 .familial {
     display: flex;
     border: 2px solid lightgray;
-    border-radius: 20px;
+    border-radius: 40px;
     border-left: none;
     padding-right: 16px;
 }
@@ -117,7 +124,7 @@ label {
 .roman {
     display: flex;
     border: 2px solid lightgray;
-    border-radius: 20px;
+    border-radius: 40px;
     border-left: none;
     padding-right: 16px;
 }
@@ -125,7 +132,7 @@ label {
 .animaux {
     display: flex;
     border: 2px solid lightgray;
-    border-radius: 20px;
+    border-radius: 40px;
     border-left: none;
     padding-right: 16px;
 }
@@ -133,10 +140,10 @@ label {
 .fav-eco, .fav-familial, .fav-roman, .fav-animaux {
     color: #0065FC;
     background-color: #DEEBFF;
-    width: 18px;
+    width: 14px;
     border-radius: 50%/50%;
-    padding: 12px 7px 0 14px;
-    margin-right: 10px;
+    padding: 13px 14px 0 14px;
+    margin-right: 12px;
 }
 
 .info {
@@ -147,54 +154,175 @@ label {
 .fav-info {
     align-self: center;
     color: #0065FC;
-    width: 11px;
+    width: 13px;
     border: 1px solid lightgray;
     border-radius: 50%/50%;
-    padding: 2px 0px 2px 8px;
-    margin-right: 9px;
+    padding: 3px 0 5px 10px;
+    margin-right: 11px;
 }
 
 .fa-info {
     font-size: x-small;
 }
 
+/* SECTION HEBERGEMENTS */
 #hebergements {
     display: flex;
-    width: 1000px;
+    width: 1100px;
+    height: 550px;
     justify-content: space-between;
     padding-top: 31px;
 }
 
 .hebergements-ville {
     background-color: lightgray;
-    width: 630px;
+    width: 700px;
     border-radius: 20px;
     padding: 20px;
 }
 
+
+.hebergements-ville-grid {
+    width: 716px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 190px 190px;
+    grid-gap: 18px;
+}
+
+.cellule {
+    background-color: white;
+    width: 200px;
+    height: 160px;
+    padding: 4px;
+    /* grid-column: span 3;
+    grid-row: span 1; */
+    border-radius: 20px;
+    
+}
+
+.hebergements-ville-grid > a {
+    width: 208px;
+    height: 168px;
+    grid-column: span 3;
+    grid-row: span 1;
+    text-decoration: none;
+}
+
+.cellule > p {
+    margin: 0;
+}
+
+.image-div {
+    background-size: 200px 120px;
+    width: 200px;
+    height: 100px;
+    border-radius: 16px 16px 0 0;
+}
+
+.image-div > img {
+    display: none;
+}
+
+.legende {
+    height: 50px;
+    margin-top: 4px;
+    margin-left: 12px;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+.legende > p {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+.vide {
+    color: lightgray;
+}
+
+.affiche-plus {
+    margin-top: 10px;
+}
+
+/* SECTION POPULAIRES */
+
 .populaires {
     background-color: lightgrey;
-    width: 255px;
+    width: 278px;
     border-radius: 20px;
-    padding: 20px;
+    padding: 25px;
 }
 
 .populaires-titre {
     display: flex;
-    align-content: center;
     justify-content: space-between;
 }
 
-.populaires-titre > h2 {
-    margin: 0;
+.fav-graphique {
+    font-size: 23px;
+    align-self: center;
 }
 
-.fa-chart-line {
-    margin: auto 0;
-    font-size: 20px;
+.cellule-populaire {
+    width: 278px;
+    height: 450px;
+    margin-top: -12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.hebergements-ville-grid {
-    display: grid;
-    grid-template: repeat(2, 200px) / repeat(9, 1fr);
+.cellule-populaire > a {
+    text-decoration: none;
+
 }
+
+.cell-pop {
+    display: flex;
+    background-color: white;
+    height: 115px;
+    padding: 4px;
+    border-radius: 20px;
+}
+
+.image-div-pop {
+    background-size: 115px 115px;
+    width: 115px;
+    height: 115px;
+    border-radius: 16px 0 0 16px;
+}
+
+.image-div-pop > img {
+    display: none;
+}
+
+.legende-pop {
+    margin: 10px 10px 10px 18px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.legende-pop > p {
+    margin-top: 5px;
+    
+}
+
+.legende-pop > div {
+    margin-top: 20px;
+}
+
+/* FOOTER */
+/* 
+.footer {
+    margin-bottom: 50px;
+} */
