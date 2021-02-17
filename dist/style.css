@@ -105,7 +105,7 @@ label {
     font-weight: bold;
 }
 
-.eco {
+.capsule {
     display: flex;
     border: 2px solid lightgray;
     border-radius: 40px;
@@ -113,31 +113,12 @@ label {
     padding-right: 16px;
 }
 
-.familial {
-    display: flex;
-    border: 2px solid lightgray;
-    border-radius: 40px;
-    border-left: none;
-    padding-right: 16px;
+.capsule:hover {
+    background-color: #0065FC;
+    color: white;
 }
 
-.roman {
-    display: flex;
-    border: 2px solid lightgray;
-    border-radius: 40px;
-    border-left: none;
-    padding-right: 16px;
-}
-
-.animaux {
-    display: flex;
-    border: 2px solid lightgray;
-    border-radius: 40px;
-    border-left: none;
-    padding-right: 16px;
-}
-
-.fav-eco, .fav-familial, .fav-roman, .fav-animaux {
+.fav-capsule {
     color: #0065FC;
     background-color: #DEEBFF;
     width: 14px;
@@ -196,10 +177,7 @@ label {
     width: 200px;
     height: 160px;
     padding: 4px;
-    /* grid-column: span 3;
-    grid-row: span 1; */
     border-radius: 20px;
-    
 }
 
 .hebergements-ville-grid > a {
