@@ -33,7 +33,11 @@ html, body {
 
 .inscription {
     color: #0065FC;
-    font-weight: bolder;
+    font-weight: bold;
+}
+
+.inscription:visited {
+    color: #0065FC;
 }
 
 .liste-navigation > div {
@@ -43,6 +47,14 @@ html, body {
 
 .liste-navigation > div > img {
     height: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
 }
 
 header a {
@@ -150,7 +162,7 @@ label {
 }
 
 .hebergements-ville {
-    background-color: lightgray;
+    background-color: #F2F2F2;
     width: 700px;
     border-radius: 20px;
     padding: 20px;
@@ -172,6 +184,7 @@ label {
     height: 160px;
     padding: 4px;
     border-radius: 20px;
+    box-shadow: 2px 2px 3px gainsboro;
 }
 
 .hebergements-ville-grid > a {
@@ -228,7 +241,7 @@ h3 {
 /* SECTION POPULAIRES */
 
 .populaires {
-    background-color: lightgrey;
+    background-color: #F2F2F2;
     width: 278px;
     border-radius: 20px;
     padding: 25px;
@@ -264,6 +277,7 @@ h3 {
     height: 115px;
     padding: 4px;
     border-radius: 20px;
+    box-shadow: 2px 2px 2px gainsboro;
 }
 
 .image-div-pop {
@@ -295,10 +309,14 @@ h3 {
 
 /* SECTION ACTIVITES */
 
+#activites {
+    margin-top: 60px;
+}
+
 .activites-ville {
     width: 1100px;
     height: 440px;
-    margin: 30px auto;
+    margin: 18px auto 30px auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -310,7 +328,7 @@ h3 {
     width: 235px;
     height: 440px;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px lightgray;
+    box-shadow: 2px 2px 2px gainsboro;
 }
 
 .activites-carte-2 {
@@ -318,7 +336,7 @@ h3 {
     height: 224px;
     margin-bottom: 60px;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px lightgray;
+    box-shadow: 2px 2px 2px gainsboro;
 }
 
 .activites-carte-3 {
@@ -326,14 +344,14 @@ h3 {
     height: 156px;
     margin-top: 0;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px lightgray;
+    box-shadow: 2px 2px 2px gainsboro;
 }
 
 .activites-carte-4 {
     width: 235px;
     height: 440px;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px lightgray;
+    box-shadow: 2px 2px 2px gainsboro;
 }
 
 .activites-carte-5 {
@@ -341,7 +359,7 @@ h3 {
     height: 166px;
     margin-bottom: 52px;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px lightgray;
+    box-shadow: 2px 2px 2px gainsboro;
 }
 
 .activites-carte-6 {
@@ -349,7 +367,7 @@ h3 {
     height: 220px;
     margin-bottom: 0;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px lightgray;
+    box-shadow: 2px 2px 2px gainsboro;
 }
 
 .activites-image-1 {
@@ -405,7 +423,7 @@ h3 {
     width: 1100px;
     height: 145px;
     margin: auto;
-    background-color: lightgray;
+    background-color: #F2F2F2;
     padding: 45px;
     display: flex;
     justify-content: space-between;    
