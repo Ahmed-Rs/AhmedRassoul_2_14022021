@@ -100,6 +100,7 @@ label {
     font-weight: bold;
     border-radius: 0 10px 10px 0;
     padding: 14px 10px 0 10px;
+    cursor: pointer;
 }
 
 .filtres {
@@ -122,6 +123,7 @@ label {
 .capsule:hover {
     background-color: #0065FC;
     color: white;
+    cursor: pointer;
 }
 
 .fav-capsule {
@@ -334,7 +336,6 @@ h3 {
 .gauche {
     width: 520px;
     height: 440px;
-    /* margin-right: 0px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -457,55 +458,76 @@ h3 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* FILTRES */
+    .filtres {
+        width: 550px;
+        height: 160px;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .filtres > p {
+        width: 400px;
+    }
+
+    .capsule {
+        width: 180px;
+    }
+
+    /* HEBERGEMENTS */
     #hebergements {
-        display: flex;
         width: 710px;
         height: auto;
         flex-direction: column;
-        justify-content: space-between;
     }
-    
-    .activites-ville {
+
+    /* POPULAIRES */
+    .populaires {
+        width: 690px;
+        height: 340px;
+        margin-top: 30px;
+    }
+        
+    .cellule-populaire {
         width: auto;
+        height: 290px;
+        margin-top: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between;
+    }
+
+    
+    .cell-pop {
+        width: 278px;
+        height: 115px;
+        margin-top: 10px;
+    }
+
+    /* ACTIVITES */
+    .activites-ville {
         height: 1000px;
-        display: flex;
         justify-content: space-between;
         flex-direction: column;
-        margin: 30px auto;
     }    
 
     .droite {
         width: 550px;
-        height: 440px;
         margin: auto;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: space-between;
         justify-content:space-between;
     }
     .gauche {
         width: 550px;
-        height: 440px;
         margin: auto;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: space-between;
         justify-content:space-between;
     }
-    
 
+    /* FOOTER */
     .footer {
         width: auto;
-        height: 145px;
-        margin: auto;
-        background-color: #F2F2F2;
-        padding: 45px;
-        display: flex;
-        justify-content: space-between;    
     }
-    
+
     .element {
         width: 250px;
         font-size: 15px;
