@@ -6,7 +6,7 @@ html, body {
 }
 
 #bloc-page {
-    width: 1100px;
+    width: max-content;
     height: 100%;
     margin: auto;
 }
@@ -314,14 +314,32 @@ h3 {
 }
 
 .activites-ville {
-    width: 1100px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 30px auto;
+}
+
+.droite {
+    width: 520px;
     height: 440px;
-    margin: 18px auto 30px auto;
+    /* margin-left: 0px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
-    justify-content:stretch;
+    justify-content: stretch;
+}
+.gauche {
+    width: 520px;
+    height: 440px;
+    /* margin-right: 0px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: stretch;
 }
 
 .activites-carte-1 {
@@ -420,7 +438,7 @@ h3 {
 /* SECTION FOOTER */
 
 .footer {
-    width: 1100px;
+    width: max-content;
     height: 145px;
     margin: auto;
     background-color: #F2F2F2;
@@ -434,3 +452,67 @@ h3 {
     font-size: 15px;
 }
 
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #hebergements {
+        display: flex;
+        width: 710px;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .activites-ville {
+        width: auto;
+        height: 1000px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 30px auto;
+    }    
+
+    .droite {
+        width: 550px;
+        height: 440px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content:space-between;
+    }
+    .gauche {
+        width: 550px;
+        height: 440px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content:space-between;
+    }
+    
+
+    .footer {
+        width: auto;
+        height: 145px;
+        margin: auto;
+        background-color: #F2F2F2;
+        padding: 45px;
+        display: flex;
+        justify-content: space-between;    
+    }
+    
+    .element {
+        width: 250px;
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
